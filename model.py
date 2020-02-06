@@ -18,7 +18,7 @@ def get_vgg_model():
 
 def get_model(maxlen=maxlen,mode="train"):
     inputs = Input(shape=(maxlen,512))
-    model = LSTM(units=256, return_sequences=True)(inputs)
+    model = Bidirectional(LSTM(units=256, return_sequences=True))(inputs)
     # model = TimeDistributed(Dense(128,activation="relu"))(model)
     out=TimeDistributed(Dense(1,activation="sigmoid"))(model)
     model = Model(inputs, out)
