@@ -1,0 +1,4 @@
+videos,frame count,important frames
+./dataset/videos/1.mp4,63,"30,31,32,33,34,45,46"
+./dataset/videos/2.mp4,67,"16,17,18,19,20,21,22,23,24,49,59,69,77"
+./dataset/videos/3.mp4,83,"10,33,34,35,36,37,38,39,64,65,66,67,8,9"
