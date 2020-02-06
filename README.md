@@ -1,7 +1,7 @@
 # VideoSummarization
 An spatiotemproal modeling for video summarization by key frames extraction 
 
-#Overview
+## Overview
 In hospitals, medical videos are recorded which are huge and consume
 lot of space. These videos are generally stored for diagnosis, treatment or
 research purposes. But due to increasing number of videos it becomes difficult to
@@ -17,4 +17,6 @@ long short term memory (LSTM), a special type of RNN, is used to process the
 sequential structure of video. Multilayer Perceptron is used to generate
 importance scores or frame scores ranging from 0 to 1 based on which key
 frames are extracted.
+
+
 
