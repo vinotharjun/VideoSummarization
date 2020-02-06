@@ -18,5 +18,7 @@ sequential structure of video. Multilayer Perceptron is used to generate
 importance scores or frame scores ranging from 0 to 1 based on which key
 frames are extracted.
 
+## Model Architecture
+![Model image](https://raw.githubusercontent.com/vinotharjun/VideoSummarization/master/images/Screenshot%20from%202020-02-06%2009-01-11.png)
 
 
