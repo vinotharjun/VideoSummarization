@@ -25,6 +25,8 @@ frames are extracted.
 The dataset of the endoscopy medical videos  is hard to get , so for now we annotated the manually the existing endoscopy videos,butfor different video summarization related problem this repository will work well,
 
 ### Data samples
+The predicted keyframes
+![image1](./dataset/keyframes/1/frame30.jpg =100x20)
 original video after summarizing 
 ![watch video](https://raw.githubusercontent.com/vinotharjun/VideoSummarization/master/results/result%20video.gif)
 
