@@ -21,4 +21,8 @@ frames are extracted.
 ## Model Architecture
 ![Model image](https://raw.githubusercontent.com/vinotharjun/VideoSummarization/master/images/Screenshot%20from%202020-02-06%2009-01-11.png)
 
+## Dataset details
+The dataset of the endoscopy medical videos  is hard to get , so for now we annotated the manually the existing endoscopy videos,butfor different video summarization related problem this repository will work well
+
+
 
