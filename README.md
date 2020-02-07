@@ -77,7 +77,7 @@ sudo apt-get install --no-install-recommends ffmpeg && pip install ffmpeg scikit
 *on Windows
 
 Permanent Solution
->on windows download the ffmpeg library using this ![ ffmpeg widows stable version build link](https://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-4.2.2-win64-static.zip)
+>on windows download the ffmpeg library using this [ ffmpeg widows stable version build link](https://ffmpeg.zeranoe.com/builds/)
  
  > unzip the folder and place it on any disk you want
  
