@@ -25,7 +25,13 @@ frames are extracted.
 The dataset of the endoscopy medical videos  is hard to get , so for now we annotated the manually the existing endoscopy videos,butfor different video summarization related problem this repository will work well,
 
 ### Data samples
-original video after summarizing 
+Here is the sample data  details
+Orignal video's frames after extracting 
+
+![](https://raw.githubusercontent.com/vinotharjun/VideoSummarization/master/images/Screenshot%20from%202020-02-07%2008-31-01.png)
+
+original video with 70 frames after summarizing 
+
 ![watch video](https://raw.githubusercontent.com/vinotharjun/VideoSummarization/master/results/result%20video.gif)
 
 ## Installation guide
