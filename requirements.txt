@@ -15,9 +15,6 @@ h5py==2.10.0
 idna==2.8
 imageio==2.6.1
 jedi==0.16.0
-Keras==2.3.1
-Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.0
 kiwisolver==1.1.0
 Markdown==3.1.1
 matplotlib==3.1.2
@@ -49,9 +46,6 @@ scikit-image==0.16.2
 scikit-video==1.1.11
 scipy==1.4.1
 six==1.14.0
-tensorboard==2.1.0
-tensorflow==2.1.0
-tensorflow-estimator==2.1.0
 termcolor==1.1.0
 traitlets==4.3.3
 urllib3==1.25.8
