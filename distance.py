@@ -42,8 +42,8 @@ def read_image(path1,path2):
   
   
 if __name__ == '__main__':
-    path1 = ""
-    path2 = ""
+    path1 = "./dataset/all frames/1/frame1.jpg"
+    path2 = "./dataset/all frames/1/frame2.jpg"
     x1,x2 = read_image(path1,path2)
     model = get_model()
     x1 = extract_feature(x1,model)
