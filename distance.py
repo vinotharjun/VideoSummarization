@@ -13,6 +13,7 @@ import skimage
 from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 import keras
+from PIL import Image
 from model import get_vgg_mode
 from keras.models import Model, Input
 from keras.applications.vgg16 import preprocess_input,VGG16
@@ -36,8 +37,8 @@ def resize_image(data,size=224):
     return x
 
 def read_image(path1,path2):
-``  x1 = cv2.resize(np.array(PIL.open(path1).convert("RGB")),(224,224))
-    x2 = cv2.resize(np.array(PIL.open(path2).convert("RGB")),(224,224))
+``  x1 = cv2.resize(np.array(Image.open(path1).convert("RGB")),(224,224))
+    x2 = cv2.resize(np.array(Image.open(path2).convert("RGB")),(224,224))
     return x1,x2
   
   
