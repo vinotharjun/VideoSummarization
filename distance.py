@@ -13,7 +13,7 @@ import skimage
 from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 import keras
-from model import get_model
+from model import get_vgg_mode
 from keras.models import Model, Input
 from keras.applications.vgg16 import preprocess_input,VGG16
 from keras.preprocessing.sequence import pad_sequences
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     path1 = "./dataset/all frames/1/frame1.jpg"
     path2 = "./dataset/all frames/1/frame2.jpg"
     x1,x2 = read_image(path1,path2)
-    model = get_model()
+    model = get_vgg_model()
     x1 = extract_feature(x1,model)
     x2 = extract_feature(x2,model)
     return np.linalg.norm(x1-x2)
