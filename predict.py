@@ -2,6 +2,7 @@ import imageio
 from utils import *
 from model import get_model,get_vgg_model
 import re
+import shutil 
 import numpy as np
 from env_variable import *
 
@@ -30,8 +31,11 @@ def get_summarized_video(video_path,jupyter=None):
     
       filename = allframe_directory+"/"+video_id+"/"+i
       print(filename)
-      gifs.append( imageio.imread(filename))
-  imageio.mimsave('./results/result video.gif', gifs)
+      if os.path.exists("./resmodel"):
+        os.mkdir("./resmodel")
+      shutil.copy(filename,"./resmodel/"+i) 
+      #gifs.append( imageio.imread(filename))
+#   imageio.mimsave('./results/result video.gif', gifs)
 if __name__=="__main__":
     print("prediction started")
     path= "/media/vinodarjun/Storage/deeplearning Projects/computer vision/summary/dataset/videos/1.mp4"
