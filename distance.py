@@ -14,7 +14,7 @@ from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 import keras
 from PIL import Image
-from model import get_vgg_mode
+from model import get_vgg_model
 from keras.models import Model, Input
 from keras.applications.vgg16 import preprocess_input,VGG16
 from keras.preprocessing.sequence import pad_sequences
