@@ -31,7 +31,7 @@ def get_summarized_video(video_path,jupyter=None):
     
       filename = allframe_directory+"/"+video_id+"/"+i
       print(filename)
-      if os.path.exists("./resmodel"):
+      if not os.path.exists("./resmodel"):
         os.mkdir("./resmodel")
       shutil.copy(filename,"./resmodel/"+i) 
       #gifs.append( imageio.imread(filename))
