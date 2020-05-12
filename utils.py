@@ -45,7 +45,7 @@ def read_all_videos(dataset,feat_extractor):
   for i in dataset.iterrows():
     video_path = dataset.iloc[i[0]]["videos"]
     videodata = read_single_video(video_path)
-    videodata = resize_image(videodata)
+    videodata = resize_image(videodata).astype(np.float64)
     feature    = extract_feature(videodata,feat_extractor)
     print(feature)
     del videodata
