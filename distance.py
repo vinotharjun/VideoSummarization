@@ -45,9 +45,12 @@ def read_image(path1,path2):
 if __name__ == '__main__':
     path1 = "./dataset/all frames/1/frame1.jpg"
     path2 = "./dataset/all frames/1/frame2.jpg"
-    x1,x2 = read_image(path1,path2)
-    model = get_vgg_model()
-    x1 = extract_feature(x1,model)
-    x2 = extract_feature(x2,model)
-    return np.linalg.norm(x1-x2)
+    for path2 in os.listdir("./dataset/all frames/1/"):
+        path2 = "./dataset/all frames/1/"+path2
+        x1,x2 = read_image(path1,path2)
+        model = get_vgg_model()
+        x1 = extract_feature(x1,model)
+        x2 = extract_feature(x2,model)
+        print("distance between path1 and path2 ====> ",np.linalg.norm(x1-x2))
+ 
         
