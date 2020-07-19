@@ -48,6 +48,12 @@ if __name__ == '__main__':
     for path2 in os.listdir("./dataset/all frames/1/"):
         path2 = "./dataset/all frames/1/"+path2
         x1,x2 = read_image(path1,path2)
+    	print (x1.shape,x2.shape)
+    	x1 = np.expand_dims(x1,axis=0)
+    	x2 = np.expand_dims(x2,axis=0)
+    	x1 = x1.astype('float64')
+    	x2 = x2.astype('float64')
+    	print (x1.shape,x2.shape)
         model = get_vgg_model()
         x1 = extract_feature(x1,model)
         x2 = extract_feature(x2,model)
