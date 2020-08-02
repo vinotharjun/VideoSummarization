@@ -45,7 +45,8 @@ def read_image(path1,path2):
 if __name__ == '__main__':
     path1 = "./dataset/all frames/1/frame1.jpg"
     path2 = "./dataset/all frames/1/frame2.jpg"
-    all_paths = os.listdir("./dataset/all frames/1/")
+    strpath = "./dataset/all frames/1/"
+    all_paths = [strpath+i for i in  os.listdir("./dataset/all frames/1/")]
     for i in range(len(all_paths)-1):
         path1 = all_paths[i]
         path2 = all_paths[i+1]
